@@ -5,7 +5,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - uses: franzbischoff/replace_envs@v1
         env:
           KSQL_API_PASS: ${{ secrets.KSQL_API_PASS }}
