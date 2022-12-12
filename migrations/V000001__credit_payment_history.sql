@@ -6,4 +6,3 @@ CREATE STREAM credit_payment_history (customer_id VARCHAR,
                          WITH (KAFKA_TOPIC='mysql_credit_payment_history',
               VALUE_FORMAT='JSON',
               KEY_FORMAT='JSON');
-
