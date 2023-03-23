@@ -9,6 +9,7 @@ jobs:
       - uses: franzbischoff/replace_envs@v1
         env:
           KSQL_API_PASS: ${{ secrets.KSQL_API_PASS }}
+          KSQL_API_USER: ${{ secrets.KSQL_API_USER }}
         with:
           from_file: 'ksql-migrations.properties'
           to_file: 'ksql-migrations.properties'
