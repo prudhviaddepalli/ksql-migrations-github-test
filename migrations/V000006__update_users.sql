@@ -1,7 +1,7 @@
 SET 'auto.offset.reset'='earliest';
 
 
-CREATE STREAM add_users (customer_id VARCHAR,
+CREATE STREAM add_users2 (customer_id VARCHAR,
                      credit_type VARCHAR,
                      paid_on_time INT)
                          WITH (KAFKA_TOPIC='mysql_credit_payment_history2',
