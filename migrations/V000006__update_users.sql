@@ -1,6 +1,5 @@
 SET 'auto.offset.reset'='earliest';
 
-drop stream add_users;
 
 CREATE STREAM add_users (customer_id VARCHAR,
                      credit_type VARCHAR,
